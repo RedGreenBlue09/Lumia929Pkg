@@ -43,3 +43,15 @@ $GCC5_ARM_PREFIX\ld MSM8974_EFI.fd.elf -T Lumia929Pkg/FvWrapper.ld -o emmc_appsb
 9. Reboot Phone
 10. At the BootMenu press vol down to boot EDK2
 ##### Credit: @imbushuo for creating [BootShim](https://github.com/imbushuo/boot-shim).
+## How to use
+1. Create startup.nsh inside the root of EFIESP and write "exit" inside
+2. Boot EDK2 and let it boot to Shell without press anything, it will boot to Setup.
+* To use Setup:
+```
+  * Volume Up     = Arrow UP
+  * Volume Down   = Arrow Down
+  * Power Button  = Enter
+  * Camera Button = ESC
+```
+* You can boot EFI files by:  
+  Boot Maintenance Manager ---> Boot From File ---> Partition ---> EFI File
