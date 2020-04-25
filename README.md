@@ -1,5 +1,5 @@
 # Lumia929Pkg
-WIP Custom ARM UEFI firmware for Lumia Icon.
+WIP Custom ARM UEFI firmware for Lumia Icon.  
 Based on [Lumia930Pkg](https://github.com/rickliu2000/Lumia930Pkg) by @rickliu2000
 ## Build
 #### Export needed variables
