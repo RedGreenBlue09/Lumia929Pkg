@@ -17,7 +17,7 @@
 [Packages]
   MdePkg/MdePkg.dec
   ArmPkg/ArmPkg.dec
-  Lumia930Pkg/Lumia930Pkg.dec
+  Lumia929Pkg/Lumia929Pkg.dec
 
 [LibraryClasses]
   QcomPlatformClockInitLib

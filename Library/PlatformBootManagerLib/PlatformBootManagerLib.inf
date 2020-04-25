@@ -39,7 +39,7 @@
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
   ShellPkg/ShellPkg.dec
-  Lumia930Pkg/Lumia930Pkg.dec
+  Lumia929Pkg/Lumia929Pkg.dec
 
 [LibraryClasses]
   BaseLib

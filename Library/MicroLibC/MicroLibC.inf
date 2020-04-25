@@ -15,8 +15,8 @@
 
 [Packages]
   MdePkg/MdePkg.dec
-  Lumia930Pkg/Lumia930Pkg.dec
-  Lumia930Pkg/Library/MicroLibC/MicroLibC.dec
+  Lumia929Pkg/Lumia929Pkg.dec
+  Lumia929Pkg/Library/MicroLibC/MicroLibC.dec
 
 [LibraryClasses]
   StrLib

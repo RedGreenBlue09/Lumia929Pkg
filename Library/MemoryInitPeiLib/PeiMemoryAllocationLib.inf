@@ -29,7 +29,7 @@
   EmbeddedPkg/EmbeddedPkg.dec
   ArmPkg/ArmPkg.dec
   ArmPlatformPkg/ArmPlatformPkg.dec
-  Lumia930Pkg/Lumia930Pkg.dec
+  Lumia929Pkg/Lumia929Pkg.dec
 
 [LibraryClasses]
   DebugLib

@@ -153,7 +153,7 @@
   ArmGicLib|ArmPkg/Drivers/ArmGic/ArmGicLib.inf
   ArmSmcLib|ArmPkg/Library/ArmSmcLib/ArmSmcLib.inf
   ArmGicArchLib|ArmPkg/Library/ArmGicArchLib/ArmGicArchLib.inf
-  ArmPlatformLib|Lumia930Pkg/Library/Lumia930Lib/Lumia930Lib.inf
+  ArmPlatformLib|Lumia929Pkg/Library/Lumia929Lib/Lumia929Lib.inf
   ArmPlatformStackLib|ArmPlatformPkg/Library/ArmPlatformStackLib/ArmPlatformStackLib.inf
   BaseLib|MdePkg/Library/BaseLib/BaseLib.inf
   BaseMemoryLib|MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf
@@ -222,25 +222,25 @@
 #  PmicShutdownLibBoot|DragonboardVendorPkg/Library/PmicShutdownLib/PmicShutdownBoottimeLib.inf
 
   # Platform Drivers
-  SerialPortLib|Lumia930Pkg/Library/FrameBufferSerialPortLib/FrameBufferSerialPortLib.inf
-  MemoryInitPeiLib|Lumia930Pkg/Library/MemoryInitPeiLib/PeiMemoryAllocationLib.inf
-  PlatformPeiLib|Lumia930Pkg/Library/PlatformPeiLib/PlatformPeiLib.inf
-  PlatformBootManagerLib|Lumia930Pkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf
+  SerialPortLib|Lumia929Pkg/Library/FrameBufferSerialPortLib/FrameBufferSerialPortLib.inf
+  MemoryInitPeiLib|Lumia929Pkg/Library/MemoryInitPeiLib/PeiMemoryAllocationLib.inf
+  PlatformPeiLib|Lumia929Pkg/Library/PlatformPeiLib/PlatformPeiLib.inf
+  PlatformBootManagerLib|Lumia929Pkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf
 
   # SoC Drivers
-  QTimerLib|Lumia930Pkg/Library/QTimerLib/QTimerLib.inf
-  InterruptsLib|Lumia930Pkg/Library/InterruptsLib/InterruptsLib.inf
-  MallocLib|Lumia930Pkg/Library/MallocLib/MallocLib.inf
-  KeypadDeviceHelperLib|Lumia930Pkg/Library/KeypadDeviceHelperLib/KeypadDeviceHelperLib.inf
-  KeypadDeviceImplLib|Lumia930Pkg/Library/KeypadDeviceImplLib/KeypadDeviceImplLib.inf
-  DloadUtilLib|Lumia930Pkg/Library/DloadUtilLib/DloadUtilLib.inf
-  QcomPlatformClockInitLib|Lumia930Pkg/Library/QcomPlatformClockInitLib/QcomPlatformClockInitLib.inf
-  QcomPlatformMmcLib|Lumia930Pkg/Library/PlatformMmcLib/QcomPlatformMmcLib.inf
-  QcomPlatformMmcClockOverrideLib|Lumia930Pkg/Library/QcomPlatformMmcClockOverrideLib/QcomPlatformMmcClockOverrideLib.inf
-  QcomTargetMmcSdhciLib|Lumia930Pkg/Library/TargetMmcSdhciLib/QcomTargetMmcSdhciLib.inf
-  LcmLib|Lumia930Pkg/Library/LcmLib/LcmLib.inf
-  MicroLibC|Lumia930Pkg/Library/MicroLibC/MicroLibC.inf
-  StrLib|Lumia930Pkg/Library/StrLib/StrLib.inf
+  QTimerLib|Lumia929Pkg/Library/QTimerLib/QTimerLib.inf
+  InterruptsLib|Lumia929Pkg/Library/InterruptsLib/InterruptsLib.inf
+  MallocLib|Lumia929Pkg/Library/MallocLib/MallocLib.inf
+  KeypadDeviceHelperLib|Lumia929Pkg/Library/KeypadDeviceHelperLib/KeypadDeviceHelperLib.inf
+  KeypadDeviceImplLib|Lumia929Pkg/Library/KeypadDeviceImplLib/KeypadDeviceImplLib.inf
+  DloadUtilLib|Lumia929Pkg/Library/DloadUtilLib/DloadUtilLib.inf
+  QcomPlatformClockInitLib|Lumia929Pkg/Library/QcomPlatformClockInitLib/QcomPlatformClockInitLib.inf
+  QcomPlatformMmcLib|Lumia929Pkg/Library/PlatformMmcLib/QcomPlatformMmcLib.inf
+  QcomPlatformMmcClockOverrideLib|Lumia929Pkg/Library/QcomPlatformMmcClockOverrideLib/QcomPlatformMmcClockOverrideLib.inf
+  QcomTargetMmcSdhciLib|Lumia929Pkg/Library/TargetMmcSdhciLib/QcomTargetMmcSdhciLib.inf
+  LcmLib|Lumia929Pkg/Library/LcmLib/LcmLib.inf
+  MicroLibC|Lumia929Pkg/Library/MicroLibC/MicroLibC.inf
+  StrLib|Lumia929Pkg/Library/StrLib/StrLib.inf
   
   # System Reset
   EfiResetSystemLib|ArmPkg/Library/ArmPsciResetSystemLib/ArmPsciResetSystemLib.inf
@@ -253,10 +253,10 @@
   PcdLib|MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf
   
   # SoC Drivers
-  GpioTlmmLib|Lumia930Pkg/GPLDriver/GpioTlmmDxe/GpioTlmmImplLib.inf
-  SpmiLib|Lumia930Pkg/Driver/SpmiDxe/SpmiImplLib.inf
-  Pm8x41Lib|Lumia930Pkg/Driver/Pm8x41Dxe/Pm8x41ImplLib.inf
-  ClockLib|Lumia930Pkg/Driver/ClockDxe/ClockImplLib.inf
+  GpioTlmmLib|Lumia929Pkg/GPLDriver/GpioTlmmDxe/GpioTlmmImplLib.inf
+  SpmiLib|Lumia929Pkg/Driver/SpmiDxe/SpmiImplLib.inf
+  Pm8x41Lib|Lumia929Pkg/Driver/Pm8x41Dxe/Pm8x41ImplLib.inf
+  ClockLib|Lumia929Pkg/Driver/ClockDxe/ClockImplLib.inf
 
 [LibraryClasses.common.DXE_CORE]
   HobLib|MdePkg/Library/DxeCoreHobLib/DxeCoreHobLib.inf
@@ -277,11 +277,11 @@
 # OfflineCrashDumpLib|DragonboardVendorPkg/Library/OfflineCrashDumpLib/OfflineCrashDumpDxeLib.inf
   ExtractGuidedSectionLib|MdePkg/Library/DxeExtractGuidedSectionLib/DxeExtractGuidedSectionLib.inf
   # SoC Drivers
-  QcomDxeTimerLib|Lumia930Pkg/Library/QTimerLib/QcomQTimerDxeTimerLib.inf
-  GpioTlmmLib|Lumia930Pkg/GPLDriver/GpioTlmmDxe/GpioTlmmLib.inf
-  SpmiLib|Lumia930Pkg/Driver/SpmiDxe/SpmiLib.inf
-  Pm8x41Lib|Lumia930Pkg/Driver/Pm8x41Dxe/Pm8x41Lib.inf
-  ClockLib|Lumia930Pkg/Driver/ClockDxe/ClockImplLib.inf
+  QcomDxeTimerLib|Lumia929Pkg/Library/QTimerLib/QcomQTimerDxeTimerLib.inf
+  GpioTlmmLib|Lumia929Pkg/GPLDriver/GpioTlmmDxe/GpioTlmmLib.inf
+  SpmiLib|Lumia929Pkg/Driver/SpmiDxe/SpmiLib.inf
+  Pm8x41Lib|Lumia929Pkg/Driver/Pm8x41Dxe/Pm8x41Lib.inf
+  ClockLib|Lumia929Pkg/Driver/ClockDxe/ClockImplLib.inf
 
 
 [LibraryClasses.common.UEFI_APPLICATION]
@@ -295,10 +295,10 @@
   ExtractGuidedSectionLib|MdePkg/Library/DxeExtractGuidedSectionLib/DxeExtractGuidedSectionLib.inf
 
   # SoC Drivers
-  GpioTlmmLib|Lumia930Pkg/GPLDriver/GpioTlmmDxe/GpioTlmmLib.inf
-  SpmiLib|Lumia930Pkg/Driver/SpmiDxe/SpmiLib.inf
-  Pm8x41Lib|Lumia930Pkg/Driver/Pm8x41Dxe/Pm8x41Lib.inf
-  ClockLib|Lumia930Pkg/Driver/ClockDxe/ClockImplLib.inf
+  GpioTlmmLib|Lumia929Pkg/GPLDriver/GpioTlmmDxe/GpioTlmmLib.inf
+  SpmiLib|Lumia929Pkg/Driver/SpmiDxe/SpmiLib.inf
+  Pm8x41Lib|Lumia929Pkg/Driver/Pm8x41Dxe/Pm8x41Lib.inf
+  ClockLib|Lumia929Pkg/Driver/ClockDxe/ClockImplLib.inf
 
 [LibraryClasses.common.UEFI_DRIVER]
   ReportStatusCodeLib|MdeModulePkg/Library/DxeReportStatusCodeLib/DxeReportStatusCodeLib.inf
@@ -310,10 +310,10 @@
   ExtractGuidedSectionLib|MdePkg/Library/DxeExtractGuidedSectionLib/DxeExtractGuidedSectionLib.inf
 
   # SoC Drivers
-  GpioTlmmLib|Lumia930Pkg/GPLDriver/GpioTlmmDxe/GpioTlmmLib.inf
-  SpmiLib|Lumia930Pkg/Driver/SpmiDxe/SpmiLib.inf
-  Pm8x41Lib|Lumia930Pkg/Driver/Pm8x41Dxe/Pm8x41Lib.inf
-  ClockLib|Lumia930Pkg/Driver/ClockDxe/ClockImplLib.inf
+  GpioTlmmLib|Lumia929Pkg/GPLDriver/GpioTlmmDxe/GpioTlmmLib.inf
+  SpmiLib|Lumia929Pkg/Driver/SpmiDxe/SpmiLib.inf
+  Pm8x41Lib|Lumia929Pkg/Driver/Pm8x41Dxe/Pm8x41Lib.inf
+  ClockLib|Lumia929Pkg/Driver/ClockDxe/ClockImplLib.inf
 
 [LibraryClasses.common.DXE_RUNTIME_DRIVER]
   HobLib|MdePkg/Library/DxeHobLib/DxeHobLib.inf
@@ -324,7 +324,7 @@
   ExtractGuidedSectionLib|MdePkg/Library/DxeExtractGuidedSectionLib/DxeExtractGuidedSectionLib.inf
 
 [Components.common]
-  Lumia930Pkg/PrePi/PrePi.inf
+  Lumia929Pkg/PrePi/PrePi.inf
 
 
   # DXE
@@ -354,15 +354,15 @@
   }
 
   # SoC Drivers (Cross-referenced from EFIDroid and Ben)
-  Lumia930Pkg/Driver/BamDxe/BamDxe.inf
-  Lumia930Pkg/GPLDriver/GpioTlmmDxe/GpioTlmmDxe.inf
-  Lumia930Pkg/GPLDriver/GpioTlmmInterruptDxe/GpioTlmmInterruptDxe.inf
-  Lumia930Pkg/Driver/SpmiDxe/SpmiDxe.inf
-  Lumia930Pkg/Driver/Pm8x41Dxe/Pm8x41Dxe.inf
-  Lumia930Pkg/Driver/GenericKeypadDeviceDxe/GenericKeypadDeviceDxe.inf
-  Lumia930Pkg/Driver/KeypadDxe/KeypadDxe.inf
-  Lumia930Pkg/Driver/ClockDxe/ClockDxe.inf
-  Lumia930Pkg/Driver/SdhciMMCHSDxe/SdhciMMCHS.inf
+  Lumia929Pkg/Driver/BamDxe/BamDxe.inf
+  Lumia929Pkg/GPLDriver/GpioTlmmDxe/GpioTlmmDxe.inf
+  Lumia929Pkg/GPLDriver/GpioTlmmInterruptDxe/GpioTlmmInterruptDxe.inf
+  Lumia929Pkg/Driver/SpmiDxe/SpmiDxe.inf
+  Lumia929Pkg/Driver/Pm8x41Dxe/Pm8x41Dxe.inf
+  Lumia929Pkg/Driver/GenericKeypadDeviceDxe/GenericKeypadDeviceDxe.inf
+  Lumia929Pkg/Driver/KeypadDxe/KeypadDxe.inf
+  Lumia929Pkg/Driver/ClockDxe/ClockDxe.inf
+  Lumia929Pkg/Driver/SdhciMMCHSDxe/SdhciMMCHS.inf
 
 
 
@@ -378,7 +378,7 @@
   MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe.inf
 
   # Graphics Driver
-  Lumia930Pkg/Driver/SimpleFbDxe/SimpleFbDxe.inf
+  Lumia929Pkg/Driver/SimpleFbDxe/SimpleFbDxe.inf
 
   # BDS
   MdeModulePkg/Universal/PrintDxe/PrintDxe.inf
@@ -398,7 +398,7 @@
       NULL|MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib.inf
       NULL|MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManagerUiLib.inf
   }
-  Lumia930Pkg/Driver/LogoDxe/LogoDxe.inf
+  Lumia929Pkg/Driver/LogoDxe/LogoDxe.inf
 
   # Disk IO
   MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.inf
@@ -420,7 +420,7 @@
   NetworkPkg/Udp4Dxe/Udp4Dxe.inf
   
   # ACPI AND SMBIOS
-  Lumia930Pkg/Driver/SmBiosTableDxe/SmBiosTableDxe.inf
+  Lumia929Pkg/Driver/SmBiosTableDxe/SmBiosTableDxe.inf
   # Shell
   ShellPkg/Application/Shell/Shell.inf {
     <LibraryClasses>

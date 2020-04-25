@@ -13,7 +13,7 @@
   MdePkg/MdePkg.dec
   ArmPkg/ArmPkg.dec
   EmbeddedPkg/EmbeddedPkg.dec
-  Lumia930Pkg/Lumia930Pkg.dec
+  Lumia929Pkg/Lumia929Pkg.dec
 
 [BuildOptions.ARM]
   GCC:*_*_*_CC_FLAGS = -Wno-overflow
