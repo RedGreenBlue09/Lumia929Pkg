@@ -4,7 +4,7 @@ Based on [Lumia930Pkg](https://github.com/rickliu2000/Lumia930Pkg) by @rickliu20
 ## How to Compile
 #### Download EDK2 & GCC-5
 ```
-git clone https://github.com/tianocore/edk2 /Path/To/EDK2/  
+git clone --recurse-submodules https://github.com/tianocore/edk2 /Path/To/EDK2/  
 cd /Path/To/EDK2  
 git clone https://github.com/RedGreenBlue09/Lumia929Pkg Lumia929Pkg/
 ```
@@ -34,7 +34,7 @@ $GCC5_ARM_PREFIX\ld MSM8974_EFI.fd.elf -T Lumia929Pkg/FvWrapper.ld -o emmc_appsb
 ## How to Install
 1. Compile Lumia929Pkg & Copy emmc_appsboot.mbn to EFIESP
 2. Download compiled BootShim from here: [BootShim](https://drive.google.com/open?id=1kURXQ55zKRdksJDg8XCeBpt89x2tCczX)
-3. Extract, copy BootShim.efi and ShimStage2.efi to EFIESP
+3. Extract, copy BootShim.efi and ShimStage2.efi to EFIESP & Rename ShimStage2 to Stage2
 4. Go to MainOS:\EFIESP\Windows\System32\Boot
 5. Rename resetphone.efi to something
 6. Copy BootShim.efi to this folder and rename to resetphone.efi
