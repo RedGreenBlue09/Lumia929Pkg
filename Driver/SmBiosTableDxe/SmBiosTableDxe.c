@@ -143,10 +143,10 @@ SMBIOS_TABLE_TYPE1 mSysInfoType1 = {
 };
 CHAR8  *mSysInfoType1Strings[] = {
   "Nokia",
-  "Lumia 930",
-  "RM-1087",
+  "Lumia 929",
+  "RM-927",
   "0bc52bb9-9473-4875-be2a-3973076c20e2",
-  "RM-1087",
+  "RM-927",
   "Phone",
   NULL
 };
@@ -177,8 +177,8 @@ SMBIOS_TABLE_TYPE2  mBoardInfoType2 = {
 };
 CHAR8  *mBoardInfoType2Strings[] = {
   "Nokia",
-  "Lumia 930",
-  "RM-1087",
+  "Lumia 929",
+  "RM-927",
   "0bc52bb9-9473-4875-be2a-3973076c20e2",
   "",
   "",
@@ -207,7 +207,7 @@ SMBIOS_TABLE_TYPE3  mEnclosureInfoType3 = {
   { { 0 } },    // ContainedElements[1];
 };
 CHAR8  *mEnclosureInfoType3Strings[] = {
-  "Lumia 930",
+  "Lumia 929",
   "1",
   "0bc52bb9-9473-4875-be2a-3973076c20e2",
   "",
