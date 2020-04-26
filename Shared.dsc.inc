@@ -174,7 +174,7 @@
   DxeServicesLib|MdePkg/Library/DxeServicesLib/DxeServicesLib.inf
   DxeServicesTableLib|MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.inf
   ExtractGuidedSectionLib|EmbeddedPkg/Library/PrePiExtractGuidedSectionLib/PrePiExtractGuidedSectionLib.inf
-  EfiResetSystemLib|Lumia929Pkg/Library/ResetSystemLib/ResetSystemLib.inf
+  EfiResetSystemLib|Lumia929Pkg/Library/LumiaResetSystemLib/ResetSystemLib.inf
   FileExplorerLib|MdeModulePkg/Library/FileExplorerLib/FileExplorerLib.inf
   FdtLib|EmbeddedPkg/Library/FdtLib/FdtLib.inf
   FrameBufferBltLib|MdeModulePkg/Library/FrameBufferBltLib/FrameBufferBltLib.inf
@@ -243,7 +243,7 @@
   StrLib|Lumia929Pkg/Library/StrLib/StrLib.inf
   
   # System Reset
-  EfiResetSystemLib|Lumia929Pkg/Library/ResetSystemLib/ResetSystemLib.inf
+  EfiResetSystemLib|Lumia929Pkg/Library/LumiaResetSystemLib/ResetSystemLib.inf
 
 [LibraryClasses.common.SEC]
   HobLib|EmbeddedPkg/Library/PrePiHobLib/PrePiHobLib.inf

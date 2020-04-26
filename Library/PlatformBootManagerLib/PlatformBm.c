@@ -527,17 +527,17 @@ PlatformRegisterOptionsAndKeys (
   )
 {
   EFI_STATUS                   Status;
-  EFI_INPUT_KEY                PowerBtn;
+  EFI_INPUT_KEY                CameraBtn;
   EFI_BOOT_MANAGER_LOAD_OPTION BootOption;
 
   GetPlatformOptions ();
 
-  PowerBtn.ScanCode     = SCAN_NULL;
-  PowerBtn.UnicodeChar  = CHAR_CARRIAGE_RETURN;
+  CameraBtn.ScanCode     = SCAN_ESC;
+  CameraBtn.UnicodeChar  = SCAN_ESC;
   Status = EfiBootManagerGetBootManagerMenu (&BootOption);
   ASSERT_EFI_ERROR (Status);
   Status = EfiBootManagerAddKeyOptionVariable (
-             NULL, (UINT16) BootOption.OptionNumber, 0, &PowerBtn, NULL
+             NULL, (UINT16) BootOption.OptionNumber, 0, &CameraBtn, NULL
              );
   ASSERT (Status == EFI_SUCCESS || Status == EFI_ALREADY_STARTED);
 }
@@ -668,7 +668,7 @@ HandleCapsules (
 }
 
 
-#define VERSION_STRING_PREFIX    L"Tianocore/EDK2 firmware version "
+#define VERSION_STRING_PREFIX    L"EDK2 firmware version "
 
 /**
   Do the platform specific action after the console is ready
