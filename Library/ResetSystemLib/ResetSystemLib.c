@@ -2,6 +2,7 @@
 
 #include <Library/DebugLib.h>
 #include <Library/ResetSystemLib.h>
+#include <Library/EfiResetSystemLib.h>
 #include <Library/UefiBootServicesTableLib.h>
 
 #include <Library/LKEnvLib.h>
@@ -113,3 +114,42 @@ ResetLibConstructor (
   return EFI_SUCCESS;
 }
 
+EFI_STATUS
+EFIAPI
+LibResetSystem (
+  IN EFI_RESET_TYPE   ResetType,
+  IN EFI_STATUS       ResetStatus,
+  IN UINTN            DataSize,
+  IN CHAR16           *ResetData OPTIONAL
+  )
+{
+  switch (ResetType) {
+  case EfiResetPlatformSpecific:
+    //
+  case EfiResetWarm:
+    ResetWarm();
+  case EfiResetCold:
+    ResetCold();
+  case EfiResetShutdown:
+    ResetShutdown();
+  default:
+    ASSERT (FALSE);
+    return EFI_UNSUPPORTED;
+  }
+
+
+  // We should never be here
+  DEBUG ((EFI_D_ERROR, "%a: Reset failed\n", __FUNCTION__));
+  CpuDeadLoop ();
+  return EFI_UNSUPPORTED;
+}
+
+EFI_STATUS
+EFIAPI
+LibInitializeResetSystem (
+  IN EFI_HANDLE        ImageHandle,
+  IN EFI_SYSTEM_TABLE  *SystemTable
+  )
+{
+  return EFI_SUCCESS;
+}
