@@ -9,7 +9,7 @@ cd /Path/To/EDK2
 git clone https://github.com/RedGreenBlue09/Lumia929Pkg Lumia929Pkg/
 ```
 Download GCC-5 from here: [Linaro GCC-5 Toolchain](https://releases.linaro.org/components/toolchain/binaries/latest-5/arm-linux-gnueabi/)  
-And extract to /Path/To/GCC-5/ (arm-linux-gnueabi)
+And extract to /Path/To/GCC-5/
 #### Install dependencies
 ```
 sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm python3-distutils
