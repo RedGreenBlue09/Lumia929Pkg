@@ -121,7 +121,7 @@ SMBIOS_TABLE_TYPE0 mBIOSInfoType0 = {
 };
 
 CHAR8 *mBIOSInfoType0Strings[] = {
-  "Mr Tunnel.", // Vendor String
+  "L929Pkg.", // Vendor String
   "Built: " __DATE__,             // BiosVersion String
   "Built: " __DATE__,             // BiosReleaseDate String
   NULL
@@ -278,22 +278,22 @@ SMBIOS_TABLE_TYPE4 mProcessorInfoType4 = {
     0,  // ProcessorVoltageReserved            :3; ///< Bits 4-6, must be zero.
     0   // ProcessorVoltageIndicateLegacy      :1;
   },
-  0,                      // ExternalClock;
+  0,                         // ExternalClock;
   2000,                      // MaxSpeed;
   2000,                      // CurrentSpeed;
-  0x41,                   // Status;
-  ProcessorUpgradeOther,  // ProcessorUpgrade;      ///< The enumeration value from PROCESSOR_UPGRADE.
-  0xFFFF,                      // L1CacheHandle;
-  0xFFFF,                      // L2CacheHandle;
-  0xFFFF,                      // L3CacheHandle;
-  0,                      // SerialNumber;
-  0,                      // AssetTag;
-  4,                      // PartNumber;
-  1,                      // CoreCount;
-  1,                      // EnabledCoreCount;
-  0,                      // ThreadCount;
-  0x8,                   // ProcessorCharacteristics;
-  ProcessorFamilyARM,     // ARM Processor Family;
+  0x41,                      // Status;
+  ProcessorUpgradeOther,     // ProcessorUpgrade;      ///< The enumeration value from PROCESSOR_UPGRADE.
+  0xFFFF,                    // L1CacheHandle;
+  0xFFFF,                    // L2CacheHandle;
+  0xFFFF,                    // L3CacheHandle;
+  0,                         // SerialNumber;
+  0,                         // AssetTag;
+  4,                         // PartNumber;
+  FixedPcdGet32(PcdCoreCount),                         // CoreCount;
+  FixedPcdGet32(PcdCoreCount),                         // EnabledCoreCount;
+  FixedPcdGet32(PcdCoreCount),                         // ThreadCount;
+  0x8,                       // ProcessorCharacteristics;
+  ProcessorFamilyARM,        // ARM Processor Family;
 };
 
 CHAR8 *mProcessorInfoType4Strings[] = {

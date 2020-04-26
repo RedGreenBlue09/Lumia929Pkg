@@ -500,7 +500,7 @@ GetPlatformOptions (
     //
     // Register a hotkey with the boot option, if requested.
     //
-    //if (BootKeys[Index].UnicodeChar == L'\0') {
+    //if (BootKeys[Index].UnicodeChar == L'\e') {
     //  continue;
     //}
 
@@ -509,7 +509,7 @@ GetPlatformOptions (
                BootOptionNumber,
                0,
                &BootKeys[Index],
-               NULL
+               '\e'
                );
     if (EFI_ERROR (Status)) {
       DEBUG ((DEBUG_ERROR, "%a: failed to register hotkey for \"%s\": %r\n",
@@ -769,7 +769,7 @@ PlatformBootManagerWaitCallback (
   Status = BootLogoUpdateProgress (
              White.Pixel,
              Black.Pixel,
-             L"Press ESCAPE for boot options wait where is the ESC key here",
+             L"Press ESCAPE for boot options",
              White.Pixel,
              (Timeout - TimeoutRemain) * 100 / Timeout,
              0
