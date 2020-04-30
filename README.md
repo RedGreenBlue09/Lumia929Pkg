@@ -1,6 +1,6 @@
 # Lumia929Pkg
 WIP Custom ARM UEFI firmware for Lumia Icon.  
-Based on [Lumia930Pkg](https://github.com/rickliu2000/Lumia930Pkg) by @rickliu2000
+Based on [Lumia930Pkg](https://github.com/rickliu2000/Lumia930Pkg) by @rickliu2000  
 Thanks to @konradybcio for tutorial and answer me questions.
 ## What's not work
 - Press ESC (Camera Button) to go to Setup Menu
