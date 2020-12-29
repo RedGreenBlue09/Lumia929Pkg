@@ -509,7 +509,7 @@ GetPlatformOptions (
                BootOptionNumber,
                0,
                &BootKeys[Index],
-               '\e'
+               0
                );
     if (EFI_ERROR (Status)) {
       DEBUG ((DEBUG_ERROR, "%a: failed to register hotkey for \"%s\": %r\n",
