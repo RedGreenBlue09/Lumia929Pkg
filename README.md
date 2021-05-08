@@ -13,7 +13,7 @@ git clone --recurse-submodules https://github.com/tianocore/edk2 /Path/To/EDK2/
 cd /Path/To/EDK2  
 git clone https://github.com/RedGreenBlue09/Lumia929Pkg Lumia929Pkg/
 ```
-Download GCC-5 from here: [Linaro GCC-5 Toolchain](https://releases.linaro.org/components/toolchain/binaries/latest-5/arm-linux-gnueabi/)  
+Download GCC-5 from here: [Linaro GCC-5 Toolchain](https://releases.linaro.org/components/toolchain/binaries/latest-5/arm-linux-gnueabihf/)  
 And extract to /Path/To/GCC-5/
 #### Install dependencies
 ```
