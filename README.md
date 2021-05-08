@@ -24,7 +24,7 @@ make -C BaseTools
 ```
 export WORKSPACE=/Path/To/EDK2  
 export EDK_TOOLS_PATH=/Path/To/EDK2/BaseTools  
-export GCC5_ARM_PREFIX=/Path/To/GCC-5/bin/arm-linux-gnueabi-
+export GCC5_ARM_PREFIX=/Path/To/GCC-5/bin/arm-linux-gnueabihf-
 . edksetup.sh
 ```
 #### Build EDK2
